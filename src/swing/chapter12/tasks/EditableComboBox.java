@@ -2,7 +2,6 @@ package swing.chapter12.tasks;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Font;
 
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -19,16 +18,12 @@ public class EditableComboBox {
 	}
 }
 
-/**
- * A frame with a sample text label and a combo box for selecting font faces.
- */
 class ComboBoxFrame extends JFrame {
 	public static final int DEFAULT_WIDTH = 300;
 	public static final int DEFAULT_HEIGHT = 200;
 
 	private JComboBox<String> faceCombo;
 	private JLabel label;
-	private static final int DEFAULT_SIZE = 12;
 	private String labels[] = { "A", "B", "C", "D", "E", "F", "G" };
 	private int previousIndex = 0;
 
@@ -51,8 +46,8 @@ class ComboBoxFrame extends JFrame {
 
 			if (selectedIndex == -1) {
 				selectedIndex = previousIndex;
-
 			}
+
 			previousIndex = selectedIndex;
 
 			label.setText(selectedString);
