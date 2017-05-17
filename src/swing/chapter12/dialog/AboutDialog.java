@@ -13,8 +13,17 @@ import javax.swing.JPanel;
  * the OK button.
  */
 public class AboutDialog extends JDialog {
+	
+	public static int id = 0;
+
+	public static int getId() {
+		return id;
+	}
+	
 	public AboutDialog(JFrame owner) {
-		super(owner, "About DialogTest", true);
+		super(owner, "About DialogTest", false);
+		
+		id++;
 
 		// add HTML label to center
 

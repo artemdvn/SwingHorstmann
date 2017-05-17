@@ -70,6 +70,7 @@ public class OptionDialogFrame extends JFrame {
 		} else if (s.equals("Object[]")) {
 			return new Object[] { messageString, messageIcon, messageComponent, messageObject };
 		} else if (s.equals("Other")) {
+			// will show toString() of messageObject
 			return messageObject;
 		} else {
 			return null;
