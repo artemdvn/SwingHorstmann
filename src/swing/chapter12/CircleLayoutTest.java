@@ -51,9 +51,11 @@ class CircleLayout implements LayoutManager {
 	private int maxComponentWidth = 0;
 	private int maxComponentHeight = 0;
 
+	@Override
 	public void addLayoutComponent(String name, Component comp) {
 	}
 
+	@Override
 	public void removeLayoutComponent(Component comp) {
 	}
 
@@ -86,6 +88,7 @@ class CircleLayout implements LayoutManager {
 		sizesSet = true;
 	}
 
+	@Override
 	public Dimension preferredLayoutSize(Container parent) {
 		setSizes(parent);
 		Insets insets = parent.getInsets();
@@ -94,6 +97,7 @@ class CircleLayout implements LayoutManager {
 		return new Dimension(width, height);
 	}
 
+	@Override
 	public Dimension minimumLayoutSize(Container parent) {
 		setSizes(parent);
 		Insets insets = parent.getInsets();
@@ -102,6 +106,7 @@ class CircleLayout implements LayoutManager {
 		return new Dimension(width, height);
 	}
 
+	@Override
 	public void layoutContainer(Container parent) {
 		setSizes(parent);
 

@@ -49,15 +49,11 @@ class FontFrame extends JFrame {
 		// construct components
 
 		JLabel faceLabel = new JLabel("Face: ");
-
 		face = new JComboBox(new String[] { "Serif", "SansSerif", "Monospaced", "Dialog", "DialogInput" });
-
 		face.addActionListener(listener);
 
 		JLabel sizeLabel = new JLabel("Size: ");
-
 		size = new JComboBox(new String[] { "8", "10", "12", "15", "18", "24", "36", "48" });
-
 		size.addActionListener(listener);
 
 		bold = new JCheckBox("Bold");
